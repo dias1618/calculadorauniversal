@@ -1,0 +1,29 @@
+:host{
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li button {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 0px 16px;
+        text-decoration: none;
+      }
+      
+      li button:hover:not(.active) {
+        background-color: #111;
+      }
+      
+      .active {
+        background-color: darkblue;
+      }
+}

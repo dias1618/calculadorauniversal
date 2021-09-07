@@ -1,0 +1,20 @@
+<div class="content" fxFlex fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+    <div class="row-content" fxFlex fxLayout="row" fxLayoutGap="15px">
+        <span class="label">Peso:</span>
+        <div fxFlex fxLayoutGap="3px">
+            <input #inputPeso type="number" [(ngModel)]="peso" class="input" (keyup.enter)="onClickPeso()"/>
+            <span class="unidade">Kg</span>
+        </div>
+    </div>
+    <div class="row-content" fxFlex fxLayout="row" fxLayoutGap="15px">
+        <span class="label">Altura:</span>
+        <div fxFlex fxLayoutGap="3px">
+            <input #inputAltura type="number" [(ngModel)]="altura" class="input" (keyup.enter)="onClickAltura()"/>
+            <span class="unidade">m</span>
+        </div>
+    </div>
+    <div class="row-content" fxFlex fxLayout="row" fxLayoutGap="15px">
+        <span class="label">IMC: </span>
+        <span class="input">{{imc}}</span>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+:host{
+
+    mat-card{
+        width: 150px;
+        height: 100px;
+        background-color: darkblue;
+        color: white;
+        box-shadow: 10px 5px 5px black;
+    }
+
+    mat-card:hover{
+        cursor: pointer;
+        background-color: cornflowerblue;
+    }
+
+}

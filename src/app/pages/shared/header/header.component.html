@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    <div fxFlex="100px">
+        <div>
+            <div fxFlex fxLayout="column" fxLayoutAlign="start">
+                <div fxFlex style="font-size: 16px;"></div>
+                <div fxFlex style="font-size: 14px;"></div>
+            </div>
+        </div>
+    </div>
+    <div fxFlex fxLayoutAlign="center center">
+        Calculadora Universal
+    </div>
+</mat-toolbar>
+<ul #navbar>
+    <li><button mat-button (click)="changePage(0, '')">Home</button></li>
+    <li><button mat-button (click)="changePage(1, 'imc')">IMC</button></li>
+</ul>
