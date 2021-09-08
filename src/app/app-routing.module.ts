@@ -8,6 +8,9 @@ const routes: Routes = [
   {
     path: 'imc', loadChildren: () => import('./pages/imc/imc.module').then(m=>m.ImcModule),
   },
+  {
+    path: 'cambio', loadChildren: () => import('./pages/cambio/cambio.module').then(m=>m.CambioModule),
+  },
 ];
 
 @NgModule({

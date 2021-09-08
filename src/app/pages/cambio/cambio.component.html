@@ -1,0 +1,24 @@
+<div class="content" fxFlex fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+    <div class="row-content" fxFlex fxLayout="row" fxLayoutGap="15px">
+        <span fxFlex="50px" class="label">De:</span>
+        <div fxFlex fxLayoutGap="3px" fxLayout="row">
+            <mat-select #moedaOrigem (selectionChange)="changeValor($event)">
+                <mat-option *ngFor="let moeda of moedas" [value]="moeda.value">
+                    {{moeda.label}}
+                </mat-option>
+            </mat-select>
+            <input #inputMoedaOrigem type="number" [(ngModel)]="valorMoedaOrigem" class="input"  (change)="changeValor($event)"/>
+        </div>
+    </div>
+    <div class="row-content" fxFlex fxLayout="row" fxLayoutGap="15px">
+        <span fxFlex="50px" class="label">Para:</span>
+        <div fxFlex fxLayoutGap="3px" fxLayout="row">
+            <mat-select #moedaDestino (selectionChange)="changeValor($event)">
+                <mat-option *ngFor="let moeda of moedas" [value]="moeda.value">
+                    {{moeda.label}}
+                </mat-option>
+            </mat-select>
+            <input #inputMoedaDestino type="number" [(ngModel)]="valorMoedaDestino" class="input" readonly/>
+        </div>
+    </div>
+</div>

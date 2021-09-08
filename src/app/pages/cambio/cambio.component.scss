@@ -1,0 +1,32 @@
+:host{
+    .content{
+        margin-top: 25vh;
+    }
+
+    .row-content{
+        width: 250px;
+    }
+
+    .label{
+        width: 80px;
+        font-size: 25px;
+        text-align: right;
+    }
+
+    mat-select{
+        width: 150px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding-top: 8px;
+        padding-left: 3px;
+    }
+
+    .input{
+        width: 150px;
+        font-size: 25px;
+    }
+
+    .unidade{
+        font-size: 25px;
+    }
+}

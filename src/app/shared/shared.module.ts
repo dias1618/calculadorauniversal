@@ -4,6 +4,7 @@ import { AngularMaterialModule } from './angular-material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { RouterModule } from '@angular/router';
+
 import { HeaderComponent } from 'src/app/pages/shared/header/header.component';
 
 let components = [
