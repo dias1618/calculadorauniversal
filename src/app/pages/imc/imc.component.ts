@@ -32,6 +32,7 @@ export class ImcComponent implements OnInit, AfterViewInit {
   }
 
   onClickAltura(): void{
+    console.log('chega')
     this.imc = this.peso / (this.altura * this.altura);
     this.imc = this.imc.toFixed(2).toString().replace('.', ',');
   }

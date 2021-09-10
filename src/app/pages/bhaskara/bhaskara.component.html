@@ -1,0 +1,19 @@
+<div class="content" fxFlex fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+    <div class="row-content" fxFlex fxLayout="row" fxLayoutGap="15px">
+        <span fxFlex="50px" class="label">Equação:</span>
+        <div fxFlex fxLayoutGap="3px" fxLayout="row">
+            <input #inputA type="number" [(ngModel)]="valorA" class="input"  (change)="changeValor($event)"/>
+            <span>X²+</span>
+            <input #inputB type="number" [(ngModel)]="valorB" class="input"  (change)="changeValor($event)"/>
+            <span>X+</span>
+            <input #inputC type="number" [(ngModel)]="valorC" class="input"  (change)="changeValor($event)"/>
+            <span>=0</span>
+        </div>
+    </div>
+    <div class="row-content" fxFlex fxLayout="row" fxLayoutGap="15px">
+        <span fxFlex="50px" class="label">Raízes:</span>
+        <div fxFlex fxLayoutGap="3px" fxLayout="row">
+            <input #inputRaizes [(ngModel)]="valorRaizes" class="result" readonly/>
+        </div>
+    </div>
+</div>

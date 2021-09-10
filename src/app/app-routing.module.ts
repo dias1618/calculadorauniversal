@@ -11,6 +11,9 @@ const routes: Routes = [
   {
     path: 'cambio', loadChildren: () => import('./pages/cambio/cambio.module').then(m=>m.CambioModule),
   },
+  {
+    path: 'bhaskara', loadChildren: () => import('./pages/bhaskara/bhaskara.module').then(m=>m.BhaskaraModule),
+  },
 ];
 
 @NgModule({
